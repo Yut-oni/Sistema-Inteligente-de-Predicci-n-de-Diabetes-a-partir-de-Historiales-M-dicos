@@ -3,7 +3,7 @@ Sistema Inteligente de Predicción de Diabetes
 Este proyecto implementa un sistema de predicción de diabetes utilizando modelos de Machine Learning aplicados a historiales médicos.
 Desarrollado con fines académicos y de investigación.
 
-Tecnologías utilizadas
+Tecnologías utilizadas:
 
 -Python
 
@@ -11,13 +11,13 @@ Tecnologías utilizadas
 
 -Streamlit
 
-Información académica
+Información académica:
 
 Universidad Privada del Norte (UPN)
 Ingeniería de Sistemas Computacionales
 Año 2025
 
-Autor: JEAN MARIO PAREDES LAZARO
+Autor: JEAN MARIO PAREDES LAZARO (Yutzz)
 
 Licencia
 
