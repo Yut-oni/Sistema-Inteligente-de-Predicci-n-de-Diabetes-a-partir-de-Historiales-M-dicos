@@ -1,19 +1,7 @@
-Sistema Inteligente de Predicción de Diabetes a partir de Historiales Médicos
+Sistema Inteligente de Predicción de Diabetes
 
-Este proyecto implementa un sistema inteligente capaz de predecir la probabilidad de que un paciente presente diabetes, utilizando técnicas de Machine Learning y análisis de datos médicos.
-Es un proyecto académico desarrollado con fines educativos y de investigación.
-
-Funcionalidades
-
-Análisis y preprocesamiento de datos médicos
-
-Entrenamiento de modelos de Machine Learning
-
-Predicción del nivel de riesgo de diabetes
-
-Gestión organizada de los datos
-
-Interfaz simple para visualizar resultados (si aplica)
+Este proyecto implementa un sistema de predicción de diabetes utilizando modelos de Machine Learning aplicados a historiales médicos.
+Desarrollado con fines académicos y de investigación.
 
 Tecnologías utilizadas
 
@@ -27,48 +15,15 @@ Matplotlib / Seaborn
 
 Streamlit (si corresponde)
 
-Git & GitHub
+Información académica
 
-Estructura del Proyecto
-Proyecto
-│── src/               → Código principal
-│── data/              → Dataset utilizado
-│── models/            → Modelos entrenados
-│── notebooks/         → Notebooks de análisis
-│── app/               → Interfaz o dashboard
-│── README.md          → Documentación
-│── requirements.txt   → Dependencias necesarias
+Universidad Privada del Norte (UPN)
+Ingeniería de Sistemas Computacionales
+Año 2024
 
-Cómo ejecutar el proyecto
-1. Clonar el repositorio
-git clone https://github.com/Yut-oni/Sistema-Inteligente-de-Predicci-n-de-Diabetes-a-partir-de-Historiales-M-dicos.git
-
-2. Instalar dependencias
-pip install -r requirements.txt
-
-3. Ejecutar el sistema
-
-Si utilizas Streamlit:
-
-streamlit run app.py
-
-
-O si tienes un archivo principal:
-
-python main.py
-
-Información Académica
-
-Proyecto desarrollado para:
-
-Universidad: Universidad Privada del Norte (UPN)
-Carrera: Ingeniería de Sistemas Computacionales
-Año: 2024
-
-Autor:
-JEAN MARIO PAREDES LAZARO
+Autor: JEAN MARIO PAREDES LAZARO
 
 Licencia
 
-Este proyecto es de uso académico.
-No se autoriza su uso comercial sin el permiso del autor.
+Uso exclusivamente académico. No autorizado para fines comerciales.
+<img width="2560" height="1646" alt="image" src="https://github.com/user-attachments/assets/4519bdfd-3ffd-404a-92da-cd45a98dd649" />
