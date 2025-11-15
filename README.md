@@ -5,15 +5,11 @@ Desarrollado con fines académicos y de investigación.
 
 Tecnologías utilizadas
 
-Python
+-Python
 
-Pandas, NumPy
+-Pandas, NumPy
 
-Scikit-learn
-
-Matplotlib / Seaborn
-
-Streamlit (si corresponde)
+-Streamlit
 
 Información académica
 
