@@ -19,7 +19,7 @@ Información académica
 
 Universidad Privada del Norte (UPN)
 Ingeniería de Sistemas Computacionales
-Año 2024
+Año 2025
 
 Autor: JEAN MARIO PAREDES LAZARO
 
