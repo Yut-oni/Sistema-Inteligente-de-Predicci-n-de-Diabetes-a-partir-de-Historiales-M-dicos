@@ -5,13 +5,14 @@ import pandas as pd
 import os
 
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "LOGGIN1212",
-    "port": 3306
+    "host": "switchyard.proxy.rlwy.net",        # host público de Railway
+    "user": "root",                             # usuario
+    "password": "byjAmIioHEiXbNlHQFAXHucaQSKDSBmQ",  # contraseña
+    "port": 33459                               # puerto público
 }
 
-DB_NAME = "boradbearch"
+DB_NAME = "railway"  # nombre de tu base en Railway
+
 
 def inicializar_bd():
     """Crea la base de datos, tablas y migra CSV a tabla de entrenamiento."""
@@ -19,11 +20,11 @@ def inicializar_bd():
         conexion = mysql.connector.connect(**DB_CONFIG)
         cursor = conexion.cursor()
 
-        # 1️⃣ Crear la base de datos
+        #  Crear la base de datos
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS {DB_NAME} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;")
         cursor.execute(f"USE {DB_NAME};")
 
-        # 2️⃣ Crear tabla de médicos
+        #  Crear tabla de médicos
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS medicos (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -34,7 +35,7 @@ def inicializar_bd():
             );
         """)
 
-        # 3️⃣ Crear tabla de pacientes
+        # Crear tabla de pacientes
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS pacientes (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -46,7 +47,7 @@ def inicializar_bd():
             );
         """)
 
-        # 4️⃣ Crear tabla de historiales pendientes (para predicciones)
+        #  Crear tabla de historiales pendientes (para predicciones)
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS historial_medico (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -70,7 +71,7 @@ def inicializar_bd():
             );
         """)
 
-        # 5️⃣ Crear tabla de entrenamiento (solo confirmados)
+        #  Crear tabla de entrenamiento (solo confirmados)
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS historial_entrenamiento (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -89,7 +90,7 @@ def inicializar_bd():
 
         conexion.commit()
 
-        # 6️⃣ Migrar CSV a historial_entrenamiento si está vacío
+        #  Migrar CSV a historial_entrenamiento si está vacío
         cursor.execute("SELECT COUNT(*) FROM historial_entrenamiento;")
         count = cursor.fetchone()[0]
 
@@ -121,17 +122,17 @@ def inicializar_bd():
                         float(row["pedigree"]), int(row["edad"]), int(row["outcome"])
                     ))
                 conexion.commit()
-                st.sidebar.success(f"✅ CSV migrado a historial_entrenamiento ({len(df)} registros).")
+                st.sidebar.success(f" CSV migrado a historial_entrenamiento ({len(df)} registros).")
             else:
-                st.sidebar.warning("⚠️ CSV no encontrado, no se migraron datos.")
+                st.sidebar.warning(" CSV no encontrado, no se migraron datos.")
         else:
-            st.sidebar.info(f"ℹ️ Ya existen {count} registros en historial_entrenamiento.")
+            st.sidebar.info(f" Ya existen {count} registros en historial_entrenamiento.")
 
         cursor.close()
         conexion.close()
 
     except mysql.connector.Error as err:
-        st.error(f"❌ Error en la base de datos: {err}")
+        st.error(f"Error en la base de datos: {err}")
 
 def conectar_bd():
     """Devuelve una conexión activa al esquema principal."""
