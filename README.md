@@ -3,6 +3,15 @@ Sistema Inteligente de Predicción de Diabetes
 Este proyecto implementa un sistema de predicción de diabetes utilizando modelos de Machine Learning aplicados a historiales médicos.
 Desarrollado con fines académicos y de investigación.
 
+python -m venv .venv
+# Activar el entorno
+source .venv/Scripts/activate      # Windows
+pip install -r web/requirements.txt
+Ejecutar la aplicación Streamlit:
+
+bash
+Copiar código
+streamlit run web/app.py
 Tecnologías utilizadas:
 
 -Python
