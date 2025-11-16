@@ -7,14 +7,8 @@ Incluye una **aplicación web en Streamlit**, una **base de datos
 integrada**, y dashboards en **Power BI** para análisis visual de los
 datos.
 
-<<<<<<< HEAD
-bash
-Copiar código
-streamlit run web/app.py
-Tecnologías utilizadas:
-=======
+
 ------------------------------------------------------------------------
->>>>>>> 920040e (Actualizar README con nueva información y detalles)
 
 ## 📁 Estructura del Proyecto
 
@@ -107,7 +101,6 @@ Configúralas localmente o mediante Railway Variables.
 
 ### 🖼️ Ejemplo de dashboards
 
-*(Agrega tus capturas de Power BI aquí)*
 
 ------------------------------------------------------------------------
 
