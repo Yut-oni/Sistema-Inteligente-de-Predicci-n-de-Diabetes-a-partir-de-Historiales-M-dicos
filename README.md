@@ -35,7 +35,7 @@ datos.
 
 ------------------------------------------------------------------------
 
-## 🚀 Instalación y Ejecución
+## 🚀 Instalación - Ejecución - Preparacion Despliegue
 
 ### 1. Clonar el repositorio
 
